@@ -2,9 +2,11 @@
 import { initializeApp } from 'firebase/app';
 
 import { 
-        getAuth, signInWithPopup, 
+        getAuth, 
+        signInWithPopup, 
         GoogleAuthProvider,
-        createUserWithEmailAndPassword
+        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword
             } from 'firebase/auth';
 
 import { 
@@ -21,6 +23,7 @@ const firebaseConfig = {
     appId: "1:520133473054:web:2932deacb7e2bad6078f0f"
   };
 
+// eslint-disable-next-line no-unused-vars
 const firebaseApp = initializeApp(firebaseConfig);
 
 const googleProvider = new GoogleAuthProvider();
@@ -67,6 +70,13 @@ export const createAuthUserWithEmailAndPassword = async(email, password) => {
     if(!email || !password) return;
 
     return await createUserWithEmailAndPassword(auth, email, password)
+
+}
+
+export const signInAuthUserWithEmailAndPassword = async(email, password) => {
+    if(!email || !password) return;
+
+    return await signInWithEmailAndPassword(auth, email, password)
 
 }
 
