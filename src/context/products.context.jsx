@@ -16,10 +16,6 @@ export const ProductsProvider = ({children}) => {
         </ProductsContext.Provider>
     )
 
-
 }
-
-
-
 
 export default ProductsProvider;
