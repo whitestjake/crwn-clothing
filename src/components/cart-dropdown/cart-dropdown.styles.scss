@@ -19,7 +19,7 @@
         height: 240px; 
         display: flex; 
         flex-direction: column; 
-        overflow-y: scroll; 
+        overflow: auto; 
     } 
     button { 
         margin-top: auto; 
