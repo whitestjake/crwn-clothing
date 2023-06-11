@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+Crwn Clothing
+
+This is an ecommerce website that can has a function cart and checkout page
+and supports google sign in
+
+view it live here!!! ------------->>>>> https://sunny-pasca-1224d7.netlify.app/ <<<<<---------
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
