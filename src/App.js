@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -24,7 +24,7 @@ useEffect(() => {
       }
       const pickedUser = 
         user && (({accessToken, email}) => ({ accessToken, email })(user));
-      console.log(setCurrentUser(pickedUser))
+      // console.log(setCurrentUser(pickedUser))
       dispatch(setCurrentUser(pickedUser));
   });
 
