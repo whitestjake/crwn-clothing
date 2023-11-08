@@ -5,7 +5,7 @@ and supports google sign in
 
 view it live here!!! ------------->>>>> https://sunny-pasca-1224d7.netlify.app/ <<<<<---------
 
-if you decide to the payment function (which is in test mode and wont actually take a payment)
+if you decide to use the payment function (which is in test mode and wont actually take a payment)
 Stripe offers a fake card number and that is...
 
       card:          
